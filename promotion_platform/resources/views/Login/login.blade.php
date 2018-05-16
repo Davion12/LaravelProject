@@ -16,11 +16,12 @@
     </div>
     <div class="login_form">
         <form method="post">
-            <input class="form_style" name="username" type="text" value="账号" style="color:#cecdcd;position:  relative;top: 25px;">
-            <input class="form_style" name="password" type="text" value="密码" style="color:#cecdcd;position:  relative;top: 60px;">
+            <input class="form_style" id="username" name="username" type="text" value="账号" style="color:#cecdcd;position:  relative;top: 25px;">
+            <input class="form_style" id="password" name="password" type="text" value="密码" style="color:#cecdcd;position:  relative;top: 60px;">
         </form>
-        <input class="form_style submit_style" type="submit" value="登录" onclick="validate()">
-        <a href="http://baidu.com" ><p style="position:  relative;top: 98px;font-size: 15px;right:  -72px;">忘记密码</p></a>
+        <div class="error_msg" id="error_msg"></div>
+        <input class="form_style submit_style" id="login" data_url="{{Route::get("/login", "AuthController@login")}}}" type="submit" value="登录" onclick="validateLoginInfo()">
+        <a href="http://baidu.com" ><p style="position: absolute;top: 195px;font-size: 15px;left: 70px;right: -72px;">忘记密码</p></a>
     </div>
 </div>
 </body>

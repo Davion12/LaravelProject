@@ -57,11 +57,20 @@ input.form_style {
 }
 
 .submit_style {
-    position: relative;
-    top: 110px;
+    position: absolute;
+    top: 175px;
+    left: -1px;
     border-radius: 8px;
     background-color: #2db0f9;
-    cursor:pointer;
+    cursor: pointer;
     border: 0;
     color: white;
+}
+
+
+.error_msg{
+    position: relative;
+    text-align: left;
+    top: 70px;
+    color: red;
 }
