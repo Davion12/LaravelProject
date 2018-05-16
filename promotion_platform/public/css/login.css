@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    border: solid;
+    width: 300px;
+    height: 310px;
+    top: -150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-width: thin;
+}
+
+.nav_style1 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 40px;
+    border: solid;
+    border-width: thin;
+    cursor:pointer;
+}
+
+.nav_style2 {
+    position: relative;
+    left: 150px;
+    top: -42px;
+    width: 150px;
+    height: 40px;
+    border: solid;
+    border-width: thin;
+    cursor:pointer;
+}
+
+.center {
+    position: relative;
+    top: 9px;
+    left: 0;
+}
+
+.login_form {
+    margin: auto;
+    position: absolute;
+    width: 240px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+input.form_style {
+    width: 230px;
+    height: 30px;
+    font-size: medium;
+}
+
+.submit_style {
+    position: relative;
+    top: 110px;
+    border-radius: 8px;
+    background-color: #2db0f9;
+    cursor:pointer;
+    border: 0;
+    color: white;
+}
