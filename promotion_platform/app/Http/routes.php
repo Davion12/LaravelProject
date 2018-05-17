@@ -17,7 +17,6 @@ Route::get('/', function () {
 
 Route::auth();
 
-
 Route::get("/home", function (){
    return view("home");
 });

@@ -29,4 +29,8 @@ class PasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    public function showResetForm(){
+        return view("auth.passwords.modifyPassword", ["page_name" => "找回密码"]);
+    }
 }
