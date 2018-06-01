@@ -15,6 +15,10 @@ Route::group(
         "prefix" => "liaison"
     ],
     function () {
+        //主页相关
+        Route::get("index",["as"=>"liaisonMain","uses"=>"MainController@index"]);
+
+
         //用户信息相关
         Route::group(
             [
@@ -26,6 +30,8 @@ Route::group(
                 Route::get("info",["as"=>"liaisonUserInfo","uses"=>"UserController@userInfo"]);
                 //修改密码
                 Route::get("password",["as"=>"liaisonPassword","uses"=>"PasswordController@password"]);
+                //用户退出
+                Route::get("logout",["as"=>"liaisonLogout","uses"=>"UserController@logout"]);
             }
         );
         //会员卡相关

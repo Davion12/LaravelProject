@@ -19,14 +19,14 @@ class RedirectIfAuthenticated
     {
         if($guard) {
             if (Auth::guard($guard)->check()) {
-                return redirect("/{$guard}/user/info");
+                return redirect("/{$guard}/index");
             }
         }else{
             if (Auth::guard("channel")->check()) {
-                return redirect("/channel/user/info");
+                return redirect("/channel/index");
             }
             if (Auth::guard("liaison")->check()) {
-                return redirect("/liaison/user/info");
+                return redirect("/liaison/index");
             }
         }
         return $next($request);

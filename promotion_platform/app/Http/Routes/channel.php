@@ -15,6 +15,9 @@ Route::group(
         "prefix" => "channel"
     ],
     function () {
+        //主页相关
+        Route::get("index",["as"=>"channelMain","uses"=>"MainController@index"]);
+
         //用户信息相关
         Route::group(
             [

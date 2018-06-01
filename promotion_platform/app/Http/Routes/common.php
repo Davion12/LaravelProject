@@ -10,3 +10,4 @@
  */
 Route::auth();
 Route::get("/",["as"=>"main","middleware"=>["auth"],"uses"=>"Common\MainController@main"]);
+Route::get("/getVerifyCode/{phonenum}",["as"=>"getVerifyCode","uses"=>"Auth\PasswordController@getVerifyCode"]);

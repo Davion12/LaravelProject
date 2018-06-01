@@ -12,3 +12,4 @@
 <!--  MAIN SCRIPTS START FROM HERE  above scripts from plugin   -->
 <script src="{{url("/assets/js/customize-chart.js")}}" type="text/javascript"></script>
 <script src="{{url("/assets/js/scripts.js")}}" type="text/javascript"></script>
+<script src="{{url("/assets/js/reset-0.7.01.js")}}" type="text/javascript"></script>

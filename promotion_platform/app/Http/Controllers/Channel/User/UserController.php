@@ -12,10 +12,20 @@
 namespace App\Http\Controllers\Channel\User;
 
 
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
+    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    /**
+     * 主页内容
+     */
+    public function index(){
+        return view("main.index");
+    }
+
     public function userInfo(){
 
     }

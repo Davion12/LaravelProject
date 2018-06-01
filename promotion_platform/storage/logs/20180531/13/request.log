@@ -1,0 +1,1 @@
+[2018-05-31 13:45:24] request.INFO: api request route:/common/verifycode/get,duration:1.8041031360626(ms),status:200 {"request":{"user_id":120,"app_id":"10000","nonce_str":"h8GaBAb9pSnydJZQseiXvDq1mf2L3t6M","c_ver":7001,"phone_num":"18798009940","code_type":52,"sign":"1E324FC0BF823DF3C2E05E2FE09AC08F"},"response":"{\"code\":0,\"message\":\"success\"}"} 

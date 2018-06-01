@@ -11,11 +11,18 @@
 
 namespace App\Http\Controllers\Liaison\User;
 
-
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+
+    public function logout()
+    {
+        Auth::guard($this->getGuard())->logout();
+        return redirect( '/');
+    }
+
     public function userInfo(){
 
     }

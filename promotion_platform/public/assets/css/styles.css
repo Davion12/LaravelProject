@@ -620,6 +620,10 @@ address {
     padding-left: 20px;
 }
 
+.an-input-group.right .an-form-position {
+    width: 40%;
+}
+
 .an-input-group .an-input-group-addon {
     position: absolute;
     left: 0;
@@ -5981,3 +5985,44 @@ input[type="button"].btn-block {
         transform: rotate(360deg);
     }
 }
+
+
+.role-style{
+    position: relative;
+    left: 150px;
+    top: -50px;
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid;
+    cursor:pointer;
+}
+
+.select-area{
+    color: black;
+    position: relative;
+    left: 200px;
+    top: 80px;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.button-style{
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 150px;
+    top:-60px;
+    color: white;
+    background: #7099f3;
+    border: none;
+    cursor:pointer;
+}
+
+.role-style-right{
+    left: 400px;
+    top: -100px;
+}
+

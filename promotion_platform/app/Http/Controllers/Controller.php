@@ -18,11 +18,20 @@ class Controller extends BaseController
         $this->_param = (array)$request->all();
     }
 
+    public function getGuard()
+    {
+        return $this->guard;
+    }
+
     public function __get($name)
     {
         if(array_key_exists($name,$this->_param)){
             return $this->_param[$name];
         }
         return null;
+    }
+
+    public function ajaxReturn($res){
+        die((is_array($res)|| is_object($res)) ? json_encode($res) : $res);
     }
 }
